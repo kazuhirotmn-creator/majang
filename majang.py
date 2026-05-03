@@ -1,10 +1,10 @@
 import flet as ft
-import ssl
+# import ssl
 import os
 import socket
 
 # SSL証明書エラー回避
-ssl._create_default_https_context = ssl._create_unverified_context
+# ssl._create_default_https_context = ssl._create_unverified_context
 from mahjong.hand_calculating.hand import HandCalculator
 from mahjong.tile import TilesConverter
 from mahjong.hand_calculating.hand_config import HandConfig
