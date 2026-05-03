@@ -19,7 +19,7 @@ jobs:
           pip install flet mahjong
       - name: Flet Build
         run: |
-          flet build web --base-url /majang/
+          flet build web --base-url /majang/ --yes
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
