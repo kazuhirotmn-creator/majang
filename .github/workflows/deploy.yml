@@ -19,8 +19,7 @@ jobs:
           pip install flet mahjong
       - name: Flet Build
         run: |
-          # majang というリポジトリ名に合わせる
-          python -m flet build web --base-url /majang/
+          flet build web --base-url /majang/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
