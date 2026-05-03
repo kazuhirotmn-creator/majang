@@ -16,11 +16,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flet
+          pip install flet mahjong
       - name: Flet Build
         run: |
-          # majang というフォルダ名で公開する場合、--base-url を合わせます
-          flet build web --base-url /majang/
+          # majang というリポジトリ名に合わせる
+          python -m flet build web --base-url /majang/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
